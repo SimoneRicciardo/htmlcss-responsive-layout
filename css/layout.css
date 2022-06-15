@@ -19,6 +19,8 @@
     justify-content: space-between;
 }
 
+
+
 .aling-it-ce{
     align-items: center;
 }
@@ -30,6 +32,7 @@
 :root{
     --primary-color: rgb(0, 132, 253);
     --primary-color-light: rgb(181, 221, 255);
+    --secondary-color: rgb(151, 146, 228);
 }
 
 .mar-r{
@@ -51,12 +54,12 @@
 /*header*/
 
 #header-bar, #header-bar .container{
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
 }
 
 .container .box{
     padding:1rem;
-    background-color: antiquewhite;                  /*temp*/
+    background-color: antiquewhite;    /*temp*/
 
 }
 
@@ -74,7 +77,7 @@
 .card{
     background-color: var(--primary-color-light);
     width: calc((100% / 3) - 1rem);
-    height: 200px;                                     /*temp*/
+    height: 200px;     /*temp*/
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
@@ -91,6 +94,16 @@
 
 #card-big{
     flex-direction: row;
+}
+
+.container-strategic .container, .container-strategic{
+    background-color: var(--secondary-color)
+}
+
+.column{
+    height: 200px;   /*temp*/
+    width: calc(100% / 2);
+
 }
 
 /*media query*/
@@ -118,6 +131,16 @@
     #card-big{
         flex-direction: column;
     }
+
+    .container-strategic .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column{
+        width: 100%;
+    }
+        
 }
 
 /*PHONE*/
