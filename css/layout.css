@@ -97,13 +97,26 @@
 }
 
 .container-strategic .container, .container-strategic{
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
+}
+
+.container-strategic .container{
+    margin-bottom: 1.5rem;
 }
 
 .column{
     height: 200px;   /*temp*/
     width: calc(100% / 2);
+}
 
+.info-testimonials{
+    text-align: center;
+}
+
+.testimonial{
+    background-color: var(--secondary-color);
+    margin: 1rem 0;
+    height: 100px;     /*temp*/
 }
 
 /*media query*/
@@ -153,5 +166,10 @@
     .card, .container-card #card-big{
         width: 100%;
         margin: 0.5rem 0;
+    }
+
+    .testimonial{
+        flex-direction: column;
+        align-items: center;
     }
 }
