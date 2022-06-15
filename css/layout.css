@@ -119,6 +119,15 @@
     height: 100px;     /*temp*/
 }
 
+.benefit .container, .benefit{
+    background-color: var(--secondary-color);
+}
+
+#title-benefit{
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
 /*media query*/
 
 /*DESKTOP*/
