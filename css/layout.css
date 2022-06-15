@@ -163,6 +163,10 @@
         width: 100%;
     }
         
+    .benefit .card{
+        width: calc(100% / 2 - 1rem);
+        margin: 0.5rem 0.5rem;
+    }
 }
 
 /*PHONE*/
@@ -180,5 +184,9 @@
     .testimonial{
         flex-direction: column;
         align-items: center;
+    }
+
+    .benefit .card{
+        width: 100%;
     }
 }
