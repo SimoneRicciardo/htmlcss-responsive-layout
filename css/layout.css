@@ -19,19 +19,45 @@
     justify-content: space-between;
 }
 
+.aling-it-ce{
+    align-items: center;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
 :root{
-    --primary-color:rgb(0, 132, 253)
+    --primary-color: rgb(0, 132, 253);
+    --primary-color-light: rgb(181, 221, 255);
+}
+
+.mar-r{
+    margin-right: 0.75rem;
+}
+
+.mar-l{
+    margin-left: 0.75rem;
+}
+
+.mar-t{
+    margin-top: 0.5rem;
+}
+
+.mar-b{
+    margin-bottom: 0.5rem;
 }
 
 /*header*/
 
-#header-bar, .container{
+#header-bar, #header-bar .container{
     background-color: var(--primary-color)
 }
 
 .container .box{
     padding:1rem;
-    background-color: antiquewhite; /*temp*/
+    background-color: antiquewhite;                  /*temp*/
+
 }
 
 .hamburger{
@@ -44,7 +70,37 @@
 }
 
 
-/*mediaquery*/
+/*main*/
+.card{
+    background-color: var(--primary-color-light);
+    width: calc((100% / 3) - 1rem);
+    height: 200px;                                     /*temp*/
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-card{
+    margin: 1.5rem 0 2rem 0;
+}
+
+.container-card #card-big{
+    width: calc((100% / 2) - 1rem);
+    flex-grow: 1;
+}
+
+#card-big{
+    flex-direction: row;
+}
+
+/*media query*/
+
+/*DESKTOP*/
+@media screen and (min-width: 1050px) {
+
+}
+
+/*TABLET*/
 
 @media screen and (max-width: 768px) {
     .list-nav{
@@ -57,5 +113,22 @@
 
     .container{
         padding: 0 1.5rem;
+    } 
+
+    #card-big{
+        flex-direction: column;
+    }
+}
+
+/*PHONE*/
+@media screen and (max-width: 480px) {
+    .container-card{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .card, .container-card #card-big{
+        width: 100%;
+        margin: 0.5rem 0;
     }
 }
