@@ -106,7 +106,8 @@ html{
     background-color: var(--white-color);
 }
 
-.box{vertical-align: middle;}
+.box{
+    vertical-align: middle;}
 
 .logo img{
     height: 50%;
@@ -241,8 +242,11 @@ html{
 }
 
 .testimonial img{
-    width: 100%;
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    margin-right: 3rem;
 }
 
 .info-testimonials h2{
@@ -273,6 +277,33 @@ html{
     padding: 2rem 0;
 }
 
+.benefit .card{
+    text-align: left;
+    padding: 1rem;
+    background-color: white;
+}
+
+.benefit .card h2{
+    font-size: 40px;
+}
+
+.benefit .card h2,.benefit .card h4{
+    color: var(--secondary-color);
+}
+
+.benefit .card h2,.benefit .card h4, .benefit .card p{
+    padding: 0.5rem 0;
+}
+
+.benefit .card a{
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+}
+
+.btn-benefit{
+    margin-top: 1.5rem;
+}
 
 
 /*media query*/
@@ -351,5 +382,9 @@ html{
     .testimonial{
         width: 100%;
         text-align: center;
+    }
+
+    .testimonial img{
+        margin: 1rem 0;
     }
 }
