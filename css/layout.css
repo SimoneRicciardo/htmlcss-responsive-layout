@@ -236,19 +236,44 @@ html{
 .testimonial{
     background-color: var(--secondary-color);
     margin: 1rem 0;
-    height: 100px;     /*temp*/
+    color: white;
+    font-size: 15px;
 }
 
+.testimonial img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.info-testimonials h2{
+    padding: 1rem 0;
+    color: var(--secondary-color);
+}
+
+.info-testimonials{
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial div p{
+    padding: 1rem 0;
+}
+
+#testimonial{
+    margin-bottom: 3rem;
+}
 
 /*--sezione benefit--*/
 .benefit .container, .benefit{
     background-color: var(--secondary-color);
+    padding: 1rem;
 }
 
 #title-benefit{
-    text-align: center;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 }
+
+
 
 /*media query*/
 
@@ -321,5 +346,10 @@ html{
 
     .benefit .card{
         width: 100%;
+    }
+
+    .testimonial{
+        width: 100%;
+        text-align: center;
     }
 }
