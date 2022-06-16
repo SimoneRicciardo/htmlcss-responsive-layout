@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
 .container{
     max-width: 1050px;
     margin: 0 auto;
@@ -19,8 +24,6 @@
     justify-content: space-between;
 }
 
-
-
 .aling-it-ce{
     align-items: center;
 }
@@ -33,6 +36,7 @@
     --primary-color: rgb(0, 132, 253);
     --primary-color-light: rgb(181, 221, 255);
     --secondary-color: rgb(151, 146, 228);
+    --white-color: rgb(255, 255, 255);
 }
 
 .mar-r{
@@ -51,16 +55,30 @@
     margin-bottom: 0.5rem;
 }
 
+.btn{
+    border-radius: 30px;
+    padding: 0.5rem;
+}
+
+.btn-big{
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+}
+
+.bord-rad{
+    border-radius: 20px;
+}
+
 /*header*/
 
 #header-bar, #header-bar .container{
     background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
 }
 
 .container .box{
-    padding:1rem;
-    background-color: antiquewhite;    /*temp*/
-
+    padding-top: 2rem;
 }
 
 .hamburger{
@@ -69,18 +87,53 @@
 
 .list-nav li{
     list-style: none;
+}
+
+.list-nav .link{
     padding: 0 1rem;
 }
 
+.list-nav li a, #card-big div a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
 
-/*main*/
+.list-nav li:last-child a{
+    color: black;
+}
+
+.btn-white{
+    background-color: var(--white-color);
+}
+
+.box{vertical-align: middle;}
+
+.logo img{
+    height: 50%;
+}
+
+/*--main--*/
+/*--sezione info--*/
 .card{
     background-color: var(--primary-color-light);
     width: calc((100% / 3) - 1rem);
-    height: 200px;     /*temp*/
-    justify-content: space-around;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    font-size: 15px;
+}
+
+.card .icon-big{
+    font-size: 50px;
+}
+
+.card h4{
+    padding: 1rem 0;
+}
+
+.card .icon-big, .card h4{
+    color: var(--primary-color);
 }
 
 .container-card{
@@ -94,8 +147,32 @@
 
 #card-big{
     flex-direction: row;
+    text-align: left;
+    padding: 0;
 }
 
+#card-big div{
+    padding: 0 0.5rem;
+}
+
+#card-big div p{
+    padding-bottom: 2rem;
+}
+
+.btn-blue{
+    background-color: var(--primary-color);
+}
+
+.fa-apple{
+    padding: 0 0.5rem;
+}
+
+#card-big div img{
+    width: 100%;
+    padding-top: 1rem;
+}
+
+/*--sezione column strategic--*/
 .container-strategic .container, .container-strategic{
     background-color: var(--secondary-color);
 }

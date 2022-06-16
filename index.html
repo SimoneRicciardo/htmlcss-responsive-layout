@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/layout.css">
     <title>htmlcss-responsive-layout</title>
@@ -13,18 +14,18 @@
 
         <div class="container flex jc-sb">
 
-            <div class="box">logo</div>
+            <div class="box logo"><img src="img/logo.png" alt="logo"></div>
 
             <div class="box">
 
-                <div class="hamburger"> ham-nav </div>
+                <div class="hamburger"> <i class="fa-solid fa-bars"></i> </div>
 
                 <ul class="list-nav flex">
-                    <li>nav</li>
-                    <li>nav</li>
-                    <li>nav</li>
-                    <li>nav</li>
-                    <li>nav</li>
+                    <li class="link"><a href="#">Planning</a></li>
+                    <li class="link"><a href="#testimonial">Testimonials</a></li>
+                    <li class="link"><a href="#">Features</a></li>
+                    <li class="link"><a href="#about-us">About us</a></li>
+                    <li class="btn-header"><a href="#" class="btn btn-white">Get Started</a></li>
                 </ul>
 
             </div>
@@ -35,32 +36,40 @@
 
     <main>
 
-        <section> <!--sezione info-->
+        <section id="info"> <!--sezione info-->
             <div class="container">
                 <div class="container-card flex wrap">
-                    <div class="card flex jc-sb mar-r mar-b" id="card-big">
-                        <div>testo</div>
-                        <div>immagine</div>
+                    <div class="card bord-rad flex jc-sb mar-r mar-b" id="card-big">
+
+                        <div>
+                            <h4>Get a demo application</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nobis fuga temporibus sunt deserunt quasi reprehenderit eaque doloribus accusantium incidunt.</p>
+                            <a href="#" class="btn-big btn-blue"><i class="fa-brands fa-apple"></i> App Store</a>
+                        </div>
+                        <div class="flex"><img src="img/phone.png" alt="phone"></div>
+
                     </div>
-                    <div class="card flex mar-b mar-l"> 
-                        <div>testo</div>
-                        <div>testo</div>
-                        <div>testo</div>
+                    <div class="card bord-rad flex mar-b mar-l aling-it-ce"> 
+
+                        <i class="fa-solid fa-file-code icon-big"></i>
+                        <h4>Clean Code</h4>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi natus voluptatem error nulla ab ratione distinctio quam dignissimos sint.</div>
+
                     </div>
-                    <div class="card flex mar-t mar-r"> 
-                        <div>testo</div>
-                        <div>testo</div>
-                        <div>testo</div>
+                    <div class="card bord-rad flex mar-t mar-r"> 
+                        <i class="fa-solid fa-compass-drafting icon-big"></i>
+                        <h4>Clean Code</h4>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi natus voluptatem error nulla ab ratione distinctio quam dignissimos sint.</div>
                     </div>
-                    <div class="card flex mar-t mar-l mar-r"> 
-                        <div>testo</div>
-                        <div>testo</div>
-                        <div>testo</div>
+                    <div class="card bord-rad flex mar-t mar-l mar-r"> 
+                        <i class="fa-solid fa-laptop-code icon-big"></i>
+                        <h4>Clean Code</h4>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi natus voluptatem error nulla ab ratione distinctio quam dignissimos sint.</div>
                     </div>
-                    <div class="card flex mar-t mar-l"> 
-                        <div>testo</div>
-                        <div>testo</div>
-                        <div>testo</div>
+                    <div class="card bord-rad flex mar-t mar-l"> 
+                        <i class="fa-solid fa-bullhorn icon-big"></i>
+                        <h4>Clean Code</h4>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quasi natus voluptatem error nulla ab ratione distinctio quam dignissimos sint.</div>
                     </div>
                 </div>
             </div>
@@ -81,7 +90,7 @@
             </div>
         </section>
 
-        <section> <!--sezione testimonial-->
+        <section id="testimonial"> <!--sezione testimonial-->
             <div class="container">
                 <div class="info-testimonials">
                     <p>testo</p>
@@ -142,6 +151,17 @@
                             <div>testo</div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about-us">
+
+            <div class="about">
+                <div class="container">
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
 
