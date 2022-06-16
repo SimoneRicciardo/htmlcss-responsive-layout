@@ -305,6 +305,54 @@ html{
     margin-top: 1.5rem;
 }
 
+/*-- sezione about us--*/
+#about-us{
+    margin-top: 3rem;
+}
+
+.about-text h2{
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.about-text p{
+    margin-bottom: 1rem;
+}
+
+.about-img h4{
+    padding: 1rem 0;
+    color: var(--secondary-color);
+}
+
+.about-img img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    margin-bottom: 0.5rem;
+}
+
+.btn-linkedin{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.img-about-pos{
+    position: relative;
+}
+
+.about-img .fa-quote-left{
+    position: absolute;
+    right: 0px;
+    font-size: 60px;
+    color: var(--secondary-color);
+}
+
+
+
 
 /*media query*/
 
@@ -386,5 +434,10 @@ html{
 
     .testimonial img{
         margin: 1rem 0;
+    }
+
+    .about .container{
+        flex-direction: column;
+        text-align: center;
     }
 }
